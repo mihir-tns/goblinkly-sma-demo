@@ -33,7 +33,7 @@ export function EngagementBreakdown() {
 						fill="#8884d8"
 						dataKey="value"
 					>
-						{engagementBreakdown.map((entry, index) => (
+						{engagementBreakdown.map((_, index) => (
 							<Cell
 								key={`cell-${index}`}
 								fill={COLORS[index % COLORS.length]}

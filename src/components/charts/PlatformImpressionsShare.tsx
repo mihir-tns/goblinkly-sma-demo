@@ -26,12 +26,12 @@ export function PlatformImpressionsShare() {
 						cx="50%"
 						cy="50%"
 						labelLine={false}
-						label={({ platform, value }) => `${platform} ${value}%`}
+						label={({ value }) => `${value}%`}
 						outerRadius={100}
 						fill="#8884d8"
 						dataKey="value"
 					>
-						{platformImpressionsShare.map((entry, index) => (
+						{platformImpressionsShare.map((_, index) => (
 							<Cell
 								key={`cell-${index}`}
 								fill={COLORS[index % COLORS.length]}
